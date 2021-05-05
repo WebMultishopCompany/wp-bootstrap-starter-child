@@ -54,10 +54,10 @@ add_action('wp_enqueue_scripts', 'wp_bootstrap_starter_child_stylesheets', 100);
  */
 function wp_bootstrap_starter_child_register_menus() {
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'lp' ),
+		'primary' => esc_html__( 'Primary', 'wp-bootstrap-starter-child' ),
 	) );
 	register_nav_menus( array(
-		'footer' => esc_html__( 'Footer', 'lp' ),
+		'footer' => esc_html__( 'Footer', 'wp-bootstrap-starter-child' ),
 	) );
 }
 add_action( 'after_setup_theme', 'wp_bootstrap_starter_child_register_menus' );
@@ -80,27 +80,27 @@ add_action( 'widgets_init', 'wp_bootstrap_starter_child_remove_unused_sidebars',
  */
 function wp_bootstrap_starter_child_add_sidebars() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Header right', 'lp' ),
+		'name'          => esc_html__( 'Header right', 'wp-bootstrap-starter-child' ),
 		'id'            => 'header-right',
-		'description'   => esc_html__( 'Add widgets here.', 'lp' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter-child' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar on the left', 'lp' ),
+		'name'          => esc_html__( 'Sidebar on the left', 'wp-bootstrap-starter-child' ),
 		'id'            => 'sidebar-left',
-		'description'   => esc_html__( 'Add widgets here.', 'lp' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter-child' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title"><span>',
 		'after_title'   => '</span></h3>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar on the right', 'lp' ),
+		'name'          => esc_html__( 'Sidebar on the right', 'wp-bootstrap-starter-child' ),
 		'id'            => 'sidebar-right',
-		'description'   => esc_html__( 'Add widgets here.', 'lp' ),
+		'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter-child' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title"><span>',
